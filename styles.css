@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&display=swap');
+
+*{
+	font-family: 'Baloo Paaji 2', cursive;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	background: #f5f5f5;
+}
+
+.top_navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	box-shadow: 1px 0 2px rgba(0,0,0,0.125);
+	display: flex;
+	align-items: center;
+}
+
+.top_navbar .logo{
+	width: 250px;
+	font-size: 25px;
+	font-weight: 600;
+	padding: 0 25px;
+	color: #007dc3;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-right: 1px solid #f5f5f5;
+}
+
+.top_navbar .logo span{
+	font-weight: 400;
+}
+
+.top_navbar .menu{
+	width: calc(100% - 250px);
+	padding: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top_navbar .hamburger{
+	font-size: 25px;
+	cursor: pointer;
+	color: #005faf;
+}
+
+.top_navbar .hamburger:hover{
+	color: #007dc3;
+}
+
+.top_navbar .menu .profile_wrap{
+	padding-left: 25px;
+	border-left: 1px solid #f5f5f5;
+}
+
+.top_navbar .menu .profile img{
+	width: 25px;
+	height: 25px;
+}
+
+.top_navbar .menu .profile{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.top_navbar .menu .profile .name{
+	margin: 0 15px;
+}
+
+.hover_collapse .sidebar{
+	width: 70px;
+}
+
+.hover_collapse .sidebar ul li a .text{
+	display: none;
+}
+
+.sidebar{
+	position: fixed;
+	top: 60px;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	background: #005faf;
+}
+
+.sidebar ul li a{
+	display: block;
+	padding: 12px 25px;
+	border-bottom: 1px solid #0e94d4;
+	color: #0e94d4;
+	transition: all 0.2s ease;
+}
+
+.sidebar ul li a .icon{
+	font-size: 18px;
+	vertical-align: middle;
+	transition: background 0.2s ease;
+}
+
+.sidebar ul li a .text{
+	margin-left: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.sidebar ul li a:hover{
+	background: #0e94d4;
+	color: #fff;
+}
+
+.click_collapse .sidebar{
+	transition: all 0.2s ease;
+}
+
+.main_container{
+	margin-top: 60px;
+	margin-left: 70px;
+	padding: 25px;
+	width: calc(100% - 70px);
+}
+
+.main_container .content{
+	background: #fff;
+	padding: 25px;
+	margin-bottom: 25px;
+	text-align: justify;
+}
+
+.click_collapse .main_container{
+	width: calc(100% - 250px);
+	margin-left: 250px;
+	transition: all 0.2s ease;
+}
